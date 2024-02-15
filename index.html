@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dayan Qazi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.html">
+</head>
+
+<body>
+    <!-- header image -->
+    <header><img src="https://zunair-practice.web.app/images/header-offer-banner.jpg" class="w-100" alt=""></header>
+    <!-- header end -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg header navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://zunair-practice.web.app/images/logo.jpg" alt="BigStore" width="150" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex mx-auto w-75 seachBar" role="search">
+                    <input class="form-control rounded-0 w-75" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn bg-white rounded-0" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn border-0" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-user text-white"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body d-flex justify-content-around">
+                                        <h5>
+                                            <a class="nav-link text-black" href="Login.html">Login <i
+                                                    class="fa-solid fa-right-to-bracket"></i></a>
+                                        </h5>
+                                        <h5>
+                                            <a href="Signup.html" class="nav-link text-black">Signup <i
+                                                    class="fa-solid fa-user-plus"></i></a>
+                                        </h5>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary header" data-bs-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+    <!-- carousel -->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="https://zunair-practice.web.app/images/Carousel%20Images/sample-1.jpg" class="d-block w-100" alt="..." />
+           
+            <div class="carousel-caption d-none d-md-block h-50 w-100 flex-column">
+              <h2 class="text-black p-2">New Women Clothes Collection</h2>
+              <h5 class="text-black p-2">
+                Up To 50% Off Best Selling At $199.99
+              </h5>
+              <button type="button" class="btn btn-secondary header">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://zunair-practice.web.app/images/Carousel%20Images/sample-2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block h-50 w-100 flex-column">
+              <h2 class="text-black p-2">Interior Berger Paints Livingroom</h2>
+              <h5 class="text-black p-2">
+                Up To 40% Off Best Selling At $199.99
+              </h5>
+              <button type="button" class="btn btn-secondary header">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      <!--  CAROUSEL END -->
+
+
+
+
+
+
+        <!-- container -->
+        <main class="container mt-3">
+            <!-- section 1 -->
+            <section class="border mb-3 p-2 rounded">
+                <h4 class="border p-2 m-2 border-top-0 border-start-0 border-end-0 pb-3">Shop By Categories</h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/CategoryImages/category1.jpg" alt="">
+                            <h5>Jonor Magic Book</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/CategoryImages/category2.jpg" alt="">
+                            <h5>Wireless EarBud</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/CategoryImages/category3.jpg" alt="">
+                            <h5>Attractive Bags</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/CategoryImages/category4.jpg" alt="">
+                            <h5>Home Sensor</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/CategoryImages/category5.jpg" alt="">
+                            <h5>Whole Sale</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- section 2 -->
+            <section class="row mb-3">
+                <div class="col-md-4">
+                    <div class="card1 p-5 rounded">
+                        <h4>Boat Rockerz <br>450 Pro</h4>
+
+                        <a href="" class="kither ">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card2 p-5 rounded">
+                        <h4>Boat Rockerz <br>450 Pro</h4>
+                        <a href="" class="kither ">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card3 p-5 rounded">
+                        <h4>Boat Rockerz <br>450 Pro</h4>
+                        <a href="" class="kither ">SHOP NOW</a>
+                    </div>
+                </div>
+            </section>
+            <!-- section2 end -->
+
+
+            <!-- section3 -->
+            <section class="border mb-3 p-2 rounded">
+                <h4 class="border p-2 m-2 border-top-0 border-start-0 border-end-0 pb-3">Trending Products</h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/trendingProducts/119-home_default.jpg"
+                                alt="">
+                            <h5>Brand: Looney Tunes <br>Condition: New <br>€82.00</h5>
+                            <button class="btn header text-white">ADD TO CART <i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/trendingProducts/122-home_default.jpg"
+                                alt="">
+                            <h5>Brand: The Simpsons <br>
+                                Condition: Refurbished <br>
+                                €84.00 €80.00 SAVE €4.00</h5>
+                            <button class="btn header text-white">ADD TO CART <i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/trendingProducts/123-home_default.jpg"
+                                alt="">
+                            <h5>Brand: Looney Tunes <br>
+                                Condition: New <br>
+                                €76.00</h5>
+                            <button class="btn header text-white">ADD TO CART <i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/trendingProducts/123-home_default.jpg"
+                                alt="">
+                            <h5>Brand: Initech space <br>
+                                Condition: New <br>
+                                €61.00 €56.12 SAVE 8%</h5>
+                            <button class="btn header text-white">ADD TO CART <i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/trendingProducts/72-home_default.jpg"
+                                alt="">
+                            <h5>Brand: Looney <br>
+                                Condition: New <br>
+                                €79.00</h5>
+                            <button class="btn header text-white">ADD TO CART <i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/trendingProducts/124-home_default.jpg"
+                                alt="">
+                            <h5>Brand: Gadget Zone <br>
+                                Condition: Refurbished <br>
+                                €68.00</h5>
+                            <button class="btn header text-white">ADD TO CART <i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/trendingProducts/77-home_default.jpg"
+                                alt="">
+                            <h5>Brand: The Simpsons <br>
+                                Condition: Used <br>
+                                €62.00 €58.28 SAVE 6%</h5>
+                            <button class="btn header text-white">ADD TO CART <i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/trendingProducts/52-home_default.jpg"
+                                alt="">
+                            <h5>Brand: The Simpsons <br>
+                                Condition: New <br>
+                                €108.00 €100.00 SAVE €8.00</h5>
+                            <button class="btn header text-white">ADD TO CART <i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+            <!-- section3 end -->
+
+            <!-- section4 -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="light rounded p-5  ">
+                        <h1 class="text-white ">Lava Z6 Camera <br>
+                            Phone</h1>
+                        <a href="" class="nav-link text-white">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="light2 rounded p-5 ">
+                        <h1 class="text-white ">Lava Z6 Camera <br>
+                            Phone</h1>
+                        <a href="" class="kither ">SHOP NOW</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- section4 end -->
+
+            <!-- section5 -->
+            <section class="mb-3" style="height: 100px;">
+                <div class="banner-image h-100 text-white d-flex justify-content-around align-items-center">
+                    <div>
+                        <h5>Best Offer Coupan Zone</h5>
+
+                    </div>
+                    <div>
+                        <button class="btn bg-light">SHOP NOW</button>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- section5 end -->
+            <!-- section6 -->
+            <section class="row text-white mb-3   header m-0 p-0 rounded">
+                <div class="col-md-6">
+                    <div class="row ">
+                        <div class="col-4">
+                            <div class="pt-2">
+                                <img src="https://zunair-practice.web.app/images/reviewImages/user1.png"
+                                    class="w-100  rounded-pill border border-info" w-100 alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-8">
+                            <h5 class="pt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, possimus.
+                            </h5>
+                            <h6 class="pt-2 ">MARK JAFFERSON</h6>
+                            <p>(DESIGNER)</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="pt-2">
+                                <img src="https://zunair-practice.web.app/images/reviewImages/user2.png"
+                                    class="w-100  rounded-pill border border-info" alt="">
+
+                            </div>
+
+                        </div>
+                        <div class="col-8">
+                            <h5 class="pt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, possimus.
+                            </h5>
+                            <h6 class="pt-2 ">MARK JAFFERSON</h6>
+                            <p>(DESIGNER)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- section6 end -->
+
+            <!-- section7 -->
+            <section class="border mb-2   p-2 rounded">
+                <h4 class="border p-2  border-top-0 border-start-0 border-end-0 pb-3">LATEST NEWS</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="p-2">
+                            <div>
+                                <img src="https://zunair-practice.web.app/images/news/news1.jpg" width="100%" alt="">
+                            </div>
+                            <div class="p-2 ">
+                                <h5>29 JULY 2022</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-2">
+                            <div>
+                                <img src="https://zunair-practice.web.app/images/news/news2.jpg" width="100%" alt="">
+                            </div>
+                            <div class="p-2 ">
+                                <h5>29 JULY 2022</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-2">
+                            <div>
+                                <img src="https://zunair-practice.web.app/images/news/news3.jpg" width="100%" alt="">
+                            </div>
+                            <div class="p-2 ">
+                                <h5>29 JULY 2022</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+            <!-- section7 end -->
+
+
+            <!-- section8 -->
+            <section class="border mb-5 p-2 rounded">
+                <h4 class="border p-2 m-2 border-top-0 border-start-0 border-end-0 pb-3">POPULAR BRANDS</h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/brands/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/brands/2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/brands/3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/brands/4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="https://zunair-practice.web.app/images/brands/5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- section8 end -->
+        </main>
+
+
+        <!-- footer -->
+        <footer class="header text-white container-fluid ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="text-warning p-2 ">
+                                    <i class="fa-solid fa-truck fs-1 "></i>
+                                </div>
+                            </div>
+                            <div class="col-9 p-2 ">
+                                <h5>FREE DELIVERY</h5>
+                                <p>Free Shipping On All Order</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="text-warning p-2 ">
+                                    <i class="fa-solid fa-truck fs-1 "></i>
+
+                                </div>
+                            </div>
+                            <div class="col-9 p-2 ">
+                                <h5>FREE DELIVERY</h5>
+                                <p>Free Shipping On All Order</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="text-warning p-2 ">
+                                    <i class="fa-solid fa-truck fs-1 "></i>
+                                </div>
+                            </div>
+                            <div class="col-9 p-2 ">
+                                <h5>FREE DELIVERY</h5>
+                                <p>Free Shipping On All Order</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="text-warning p-2 ">
+                                    <i class="fa-solid fa-truck fs-1 "></i>
+                                </div>
+                            </div>
+                            <div class="col-9 p-2 ">
+                                <h5>FREE DELIVERY</h5>
+                                <p>Free Shipping On All Order</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- footer 2 -->
+                <div class="border pb-3 border-end-0 border-start-0 border-bottom-0  "></div>
+                <section class="row pb-5">
+                    <div class="col-md-6">
+                        <h2>Store Information</h2>
+                        <p><i class="fa-solid fa-location-dot"></i> Bigstore - Online Mega Store 507-Union Trade Centre
+                            France</p>
+                        <p><i class="fa-solid fa-phone"></i> 000-000-0000</p>
+                        <p><i class="fa-solid fa-envelope"></i> dayanqazi622@gmail.com</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <h2>Newsletter</h2>
+                            <p>Subscribe to our latest newsletter to get news about special discounts.</p>
+                            <div class="d-flex p-2">
+                                <input type="search" placeholder="Search" class="form-control rounded-0">
+                                <button class="btn bg-white rounded-0"><i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                            <img src="https://zunair-practice.web.app/images/icons/app-icon-1.png" alt="">
+                            <img src="https://zunair-practice.web.app/images/icons/app-icon-2.png" alt="">
+
+                        </div>
+
+                    </div>
+                </section>
+                <div class="border p-3  border-end-0 border-start-0 border-bottom-0  "></div>
+                <section class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-around">
+                            <a href="a" class="nav-link"><i class="fa-brands fa-facebook fs-3"></i></a>
+                            <a href="a" class="nav-link"><i class="fa-brands fa-twitter fs-3"></i></a>
+                            <a href="a" class="nav-link"><i class="fa-solid fa-wifi fs-3"></i></a>
+                            <a href="a" class="nav-link"><i class="fa-brands fa-youtube fs-3"></i></a>
+                            <a href="a" class="nav-link"><i class="fa-brands fa-instagram fs-3"></i></a>
+                            <a href="a" class="nav-link"><i class="fa-brands fa-github fs-3"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <p>© 2022 - Ecommerce software by PrestaShop™</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-around">
+                            <img src="https://zunair-practice.web.app/images/paymentImg/carte_bleue.png" alt="">
+                            <img src="https://zunair-practice.web.app/images/paymentImg/visa.png" alt="">
+                            <img src="https://zunair-practice.web.app/images/paymentImg/master_card.png" alt="">
+                            <img src="https://zunair-practice.web.app/images/paymentImg/american_express.png" alt="">
+                            <img src="https://zunair-practice.web.app/images/paymentImg/paypal.png" alt="">
+
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
